@@ -1,0 +1,330 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+
+.blur {
+  padding: 6rem;
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+  background-color: rgba(18, 25, 30, 0.8);
+}
+
+.author {
+  font-size: 1.1rem;
+}
+
+button,
+input[type=submit],
+input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: scale 0.12s;
+}
+
+button:not(.menu-button) {
+  display: grid;
+  place-items: center;
+}
+button:not(.menu-button):hover, button:not(.menu-button):focus {
+  scale: 1.02;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.logo > * {
+  cursor: pointer;
+}
+
+.menu-button {
+  display: none;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 31.3rem;
+  font-family: "Herr Von Muellerhoff", cursive;
+  white-space: nowrap;
+  font-weight: 100;
+}
+
+h4,
+button,
+input[type=submit],
+input[type=reset] {
+  font-size: 3.6rem;
+  font-size: bold;
+}
+
+p,
+a {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+a:hover:not(.logo a),
+a:focus {
+  opacity: 0.8;
+}
+
+a {
+  white-space: nowrap;
+}
+
+p.large {
+  font-size: 3.6rem;
+  width: 627px;
+  max-width: 90vw;
+}
+
+body {
+  background-color: #12191e;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (max-width: 120em) {
+  .bg-container {
+    height: 123rem;
+  }
+}
+@media (max-width: 76em) {
+  nav ul {
+    display: none !important;
+  }
+  nav ul.open {
+    transform-origin: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding: 6rem;
+    -webkit-backdrop-filter: blur(0.2rem);
+            backdrop-filter: blur(0.2rem);
+    background-color: rgba(18, 25, 30, 0.8);
+    padding: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 260px;
+    text-align: right;
+    padding-top: 13rem;
+    border-left: 0.2rem solid #ffffff;
+    border-bottom: 0.2rem solid #ffffff;
+  }
+  nav ul.open li {
+    width: 100%;
+  }
+  nav ul.open li a {
+    text-align: right;
+    width: 100%;
+  }
+  li.journey {
+    width: 100% !important;
+  }
+  li.journey span {
+    display: none;
+  }
+  .menu-button {
+    position: absolute;
+    display: block;
+    right: 4rem;
+    top: 4rem;
+  }
+  .author {
+    display: none;
+  }
+}
+.bg-container {
+  background-image: url("https://images.unsplash.com/photo-1484387436194-cf7cb70800ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  position: relative;
+}
+.bg-container .content-container {
+  max-width: 96vw;
+  width: 150rem;
+  height: 110rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+.bg-container .content-container nav.flex {
+  justify-content: flex-start;
+  padding: 5rem 0;
+  max-width: 90vw;
+  margin-inline: auto;
+}
+.bg-container .content-container nav.flex .logo {
+  gap: 0.5rem;
+}
+.bg-container .content-container nav.flex .logo a {
+  gap: 0.5rem;
+}
+.bg-container .content-container nav.flex ul.flex {
+  gap: 3rem;
+  justify-content: end;
+}
+.bg-container .content-container nav.flex ul.flex li span {
+  margin-right: 1rem;
+}
+.bg-container .content-container nav.flex ul.flex li span img {
+  margin-left: 4rem;
+}
+.bg-container .content-container nav.flex ul.flex li.journey.flex {
+  width: unset;
+  gap: 0;
+}
+.bg-container .content-container section.top.flex {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  height: 100%;
+}
+@media (max-width: 120em) {
+  .bg-container .content-container section.top.flex {
+    flex-wrap: wrap;
+  }
+}
+.bg-container .content-container section.top.flex .top__left {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 86.6rem;
+  max-width: 90vw;
+}
+.bg-container .content-container section.top.flex .top__left .top__left__top {
+  margin-bottom: 4rem;
+}
+.bg-container .content-container section.top.flex .top__left .top__left__bottom .horizontal-line {
+  width: 2px;
+  background-color: #ffffff;
+  z-index: 999;
+  height: 28.5rem;
+}
+@media (max-width: 120em) {
+  .bg-container .content-container section.top.flex .top__left .top__left__bottom .horizontal-line {
+    height: 12.5rem;
+  }
+}
+.bg-container .content-container section.top.flex .top__left .top__left__bottom .vertical-line {
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.bg-container .content-container section.top.flex .top__left .top__left__bottom button {
+  margin-top: -8.5rem;
+  margin-left: 5rem;
+  z-index: 0;
+}
+.bg-container .content-container section.top.flex .top__right.flex {
+  gap: 7rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  width: 86.6rem;
+  max-width: 90vw;
+  margin: auto;
+}
+.bg-container .content-container section.top.flex .top__right.flex h4 {
+  margin-bottom: 1rem;
+}
+.bg-container .content-container a.author {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+section.bottom {
+  position: relative;
+  margin-bottom: 9rem;
+}
+section.bottom .large-text-container {
+  text-align: center;
+  height: 300px;
+}
+section.bottom .large-text-container h3 {
+  opacity: 20%;
+  height: 100%;
+}
+section.bottom .elem-container {
+  width: 150rem;
+  max-width: 90vw;
+  margin-top: 6rem;
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.bottom .elem-container .elem {
+  flex: 1;
+}
+section.bottom .elem-container .elem img {
+  height: 500px;
+  width: 100%;
+  min-width: 320px;
+}
+section.bottom .elem-container .elem h4 {
+  padding-top: 2rem;
+  cursor: pointer;
+}
+section.bottom .elem-container .elem h4:hover, section.bottom .elem-container .elem h4:focus {
+  opacity: 0.8;
+}
+
+footer {
+  height: 300px;
+  background-color: #011117;
+}
+footer ul {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
