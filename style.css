@@ -8,17 +8,6 @@
   font-family: "Lato", sans-serif;
 }
 
-.blur {
-  padding: 6rem;
-  -webkit-backdrop-filter: blur(0.2rem);
-          backdrop-filter: blur(0.2rem);
-  background-color: rgba(18, 25, 30, 0.8);
-}
-
-.author {
-  font-size: 1.1rem;
-}
-
 button,
 input[type=submit],
 input[type=reset] {
@@ -45,6 +34,29 @@ button:not(.menu-button):hover, button:not(.menu-button):focus {
   align-items: center;
   width: 100%;
   gap: 3rem;
+}
+
+.blur {
+  padding: 6rem;
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+  background-color: rgba(18, 25, 30, 0.8);
+}
+
+.author {
+  font-size: 1.1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .logo > * {

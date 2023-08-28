@@ -40,16 +40,6 @@ $column-width: 86.6rem;
     font-family: 'Lato', sans-serif;
 }
 
-.blur {
-    padding: $gap-600;
-    backdrop-filter: blur(0.2rem);
-    background-color: rgba($color: #12191e, $alpha: 0.8);
-}
-
-.author {
-    font-size: 1.1rem;
-}
-
 button,
 input[type='submit'],
 input[type='reset'] {
@@ -77,6 +67,28 @@ button:not(.menu-button) {
     align-items: center;
     width: 100%;
     gap: $gap-300;
+}
+
+.blur {
+    padding: $gap-600;
+    backdrop-filter: blur(0.2rem);
+    background-color: rgba($color: #12191e, $alpha: 0.8);
+}
+
+.author {
+    font-size: 1.1rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .logo > * {

@@ -34,31 +34,33 @@
               <h2 class="logo__text">Ocianica</h2>
             </a>
           </div>
-          <ul class="flex" id="nav-links">
+          <ul role="navigation" class="flex" id="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Tours</a></li>
             <li><a href="#">Contact</a></li>
             <li class="flex journey">
-              <span><img src="/images/rightArrow.svg" alt="" /></span>
+              <span
+                ><img src="/images/rightArrow.svg" alt="right arrow"
+              /></span>
               <a href="#">Start a journey</a>
             </li>
           </ul>
           <button
             class="menu-button"
             id="menu-button"
-            aria-labelledby="hamburger"
+            aria-label="Toggle Menu"
             aria-expanded="false"
           >
-            ☰
+            <span class="visually-hidden">Toggle Menu</span>
+            <div role="presentation" tabindex="-1" aria-hidden="true">☰</div>
           </button>
-          <!-- <div class="menu-button" id="menu-button"></div> -->
         </nav>
         <section class="top flex">
           <div class="top__left">
             <div class="top__left__top">
               <h1>Discover the water</h1>
               <p class="large">
-                From pristine waters to majestic forests --we’we got it all.
+                From pristine waters to majestic forests --we’we got it all
               </p>
             </div>
             <div class="top__left__bottom">
