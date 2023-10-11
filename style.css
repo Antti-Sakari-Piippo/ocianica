@@ -144,7 +144,7 @@ ul {
 
 @media (max-width: 120em) {
   .bg-container {
-    height: 123rem;
+    height: 128rem;
   }
 }
 @media (max-width: 76em) {
@@ -228,6 +228,7 @@ ul {
 }
 .bg-container .content-container nav.flex ul.flex li span img {
   margin-left: 4rem;
+  margin-top: 0.3rem;
 }
 .bg-container .content-container nav.flex ul.flex li.journey.flex {
   width: unset;

@@ -173,7 +173,7 @@ ul {
 ///  PROJECT
 @media (max-width: $media-query__medium) {
     .bg-container {
-        height: 123rem;
+        height: 128rem;
     }
 }
 
@@ -259,6 +259,7 @@ ul {
                         margin-right: $gap-100;
                         img {
                             margin-left: $gap-400;
+                            margin-top: 0.3rem;
                         }
                     }
                 }
