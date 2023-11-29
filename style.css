@@ -149,7 +149,26 @@ ul {
 }
 @media (max-width: 76em) {
   nav ul {
-    display: none !important;
+    transform-origin: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding: 6rem;
+    -webkit-backdrop-filter: blur(0.2rem);
+            backdrop-filter: blur(0.2rem);
+    background-color: rgba(18, 25, 30, 0.8);
+    padding: 4rem;
+    position: absolute;
+    right: -270px;
+    top: 0;
+    width: 260px;
+    text-align: right;
+    padding-top: 13rem;
+    border-left: 0.2rem solid #ffffff;
+    border-bottom: 0.2rem solid #ffffff;
+    transition: width 0.27s ease-in-out;
+  }
+  nav ul.flex {
+    width: 0%;
   }
   nav ul.open {
     transform-origin: 100%;
