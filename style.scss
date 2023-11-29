@@ -279,7 +279,7 @@ ul {
             margin-top: $gap-500;
             margin-bottom: $gap-800;
             height: 100%;
-            @media (max-width: $media-query__medium) {
+            @media (max-width: $media-query__small) {
                 flex-wrap: wrap;
             }
             .top__left {
@@ -357,7 +357,7 @@ section.bottom {
         margin-inline: auto;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         .elem {
             flex: 1;
             img {

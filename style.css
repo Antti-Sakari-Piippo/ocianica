@@ -244,7 +244,7 @@ ul {
   margin-bottom: 8rem;
   height: 100%;
 }
-@media (max-width: 120em) {
+@media (max-width: 76em) {
   .bg-container .content-container section.top.flex {
     flex-wrap: wrap;
   }
@@ -318,7 +318,7 @@ section.bottom .elem-container {
   margin-inline: auto;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 section.bottom .elem-container .elem {
   flex: 1;
