@@ -193,7 +193,6 @@ ul {
         top: 0;
         width: 260px;
         text-align: right;
-        padding-top: 13rem;
         border-left: $border-thickness solid $text-color;
         border-bottom: $border-thickness solid $text-color;
         transition: width 0.27s ease-in-out;
@@ -202,22 +201,9 @@ ul {
         }
     }
     nav ul.open {
-        $border-thickness: 0.2rem;
-        transform-origin: 100%;
-        display: flex !important;
-        flex-direction: column;
-        padding: $gap-600;
-        backdrop-filter: blur(0.2rem);
-        background-color: rgba($color: #12191e, $alpha: 0.8);
-        padding: $gap-400;
-        position: absolute;
         right: 0;
-        top: 0;
         width: 260px;
-        text-align: right;
         padding-top: 13rem;
-        border-left: $border-thickness solid $text-color;
-        border-bottom: $border-thickness solid $text-color;
         li {
             width: 100%;
             a {
