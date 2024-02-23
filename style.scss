@@ -128,7 +128,6 @@ button,
 input[type='submit'],
 input[type='reset'] {
     font-size: 3.6rem;
-    font-size: bold;
 }
 p,
 a {
@@ -360,18 +359,24 @@ section.bottom {
         flex-wrap: wrap-reverse;
         .elem {
             flex: 1;
-            img {
-                height: 500px;
-                width: 100%;
-                min-width: 320px;
+            &:hover {
+                .elem_img-container img {
+                    transform: scale(1.1);
+                }
+            }
+            .elem_img-container {
+                overflow: hidden;
+                img {
+                    height: 500px;
+                    width: 100%;
+                    min-width: 320px;
+                    transition: transform 0.25s ease-in-out;
+                    overflow: hidden;
+                }
             }
             h4 {
-                padding-top: $gap-200;
+                padding-top: $gap-100;
                 cursor: pointer;
-                &:hover,
-                &:focus {
-                    opacity: $link-opacity;
-                }
             }
         }
     }

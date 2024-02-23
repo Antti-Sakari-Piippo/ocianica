@@ -99,7 +99,6 @@ button,
 input[type=submit],
 input[type=reset] {
   font-size: 3.6rem;
-  font-size: bold;
 }
 
 p,
@@ -323,17 +322,22 @@ section.bottom .elem-container {
 section.bottom .elem-container .elem {
   flex: 1;
 }
-section.bottom .elem-container .elem img {
+section.bottom .elem-container .elem:hover .elem_img-container img {
+  transform: scale(1.1);
+}
+section.bottom .elem-container .elem .elem_img-container {
+  overflow: hidden;
+}
+section.bottom .elem-container .elem .elem_img-container img {
   height: 500px;
   width: 100%;
   min-width: 320px;
+  transition: transform 0.25s ease-in-out;
+  overflow: hidden;
 }
 section.bottom .elem-container .elem h4 {
-  padding-top: 2rem;
+  padding-top: 1rem;
   cursor: pointer;
-}
-section.bottom .elem-container .elem h4:hover, section.bottom .elem-container .elem h4:focus {
-  opacity: 0.8;
 }
 
 footer {
