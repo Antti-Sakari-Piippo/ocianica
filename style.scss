@@ -135,7 +135,7 @@ a {
     font-weight: 300;
 }
 
-a:hover:not(.logo a),
+a:hover:not(.logo a, .elem a),
 a:focus {
     opacity: $link-opacity;
 }
@@ -344,6 +344,7 @@ section.bottom {
     .large-text-container {
         text-align: center;
         height: 300px;
+        pointer-events: none;
         h3 {
             opacity: 20%;
             height: 100%;
@@ -357,6 +358,9 @@ section.bottom {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap-reverse;
+        a {
+            cursor: pointer;
+        }
         .elem {
             flex: 1;
             &:hover {
