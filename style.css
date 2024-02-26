@@ -100,6 +100,12 @@ input[type=submit],
 input[type=reset] {
   font-size: 3.6rem;
 }
+h4:focus,
+button:focus,
+input[type=submit]:focus,
+input[type=reset]:focus {
+  border: 2px solid white;
+}
 
 p,
 a {
@@ -319,9 +325,6 @@ section.bottom .elem-container {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-}
-section.bottom .elem-container a {
-  cursor: pointer;
 }
 section.bottom .elem-container .elem {
   flex: 1;
