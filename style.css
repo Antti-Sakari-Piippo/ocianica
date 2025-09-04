@@ -149,7 +149,7 @@ ul {
 
 @media (max-width: 120em) {
   .bg-container {
-    height: 128rem;
+    block-size: 128rem;
   }
 }
 @media (max-width: 76em) {
@@ -165,18 +165,18 @@ ul {
     position: absolute;
     right: -27rem;
     top: 0;
-    width: 26rem;
+    inline-size: 26rem;
     text-align: right;
     border-left: 0.2rem solid #ffffff;
     border-bottom: 0.2rem solid #ffffff;
-    transition: width 0.27s ease-in-out;
+    transition: inline-size 0.27s ease-in-out;
   }
   nav ul.flex {
-    width: 0%;
+    inline-size: 0%;
   }
   nav ul.open {
     right: 0;
-    width: 26rem;
+    inline-size: 26rem;
     padding-top: 13rem;
   }
   nav ul.open li {
@@ -210,9 +210,9 @@ ul {
   position: relative;
 }
 .bg-container .content-container {
-  max-width: 96vw;
-  width: 150rem;
-  height: 110rem;
+  max-inline-size: 96vw;
+  inline-size: 150rem;
+  block-size: 110rem;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -220,7 +220,7 @@ ul {
 .bg-container .content-container nav.flex {
   justify-content: flex-start;
   padding: 5rem 0;
-  max-width: 90vw;
+  max-inline-size: 90vw;
   margin-inline: auto;
 }
 .bg-container .content-container nav.flex .logo {
@@ -241,13 +241,13 @@ ul {
   margin-top: 0.3rem;
 }
 .bg-container .content-container nav.flex ul.flex li.journey.flex {
-  width: unset;
+  inline-size: unset;
   gap: 0;
 }
 .bg-container .content-container section.top.flex {
   margin-top: 5rem;
   margin-bottom: 8rem;
-  height: 100%;
+  block-size: 100%;
 }
 @media (max-width: 76em) {
   .bg-container .content-container section.top.flex {
@@ -258,26 +258,26 @@ ul {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 86.6rem;
-  max-width: 90vw;
+  inline-size: 86.6rem;
+  max-inline-size: 90vw;
 }
 .bg-container .content-container section.top.flex .top__left .top__left__top {
   margin-bottom: 4rem;
 }
 .bg-container .content-container section.top.flex .top__left .top__left__bottom .horizontal-line {
-  width: 2px;
+  inline-size: 2px;
   background-color: #ffffff;
   z-index: 999;
-  height: 28.5rem;
+  block-size: 28.5rem;
 }
 @media (max-width: 120em) {
   .bg-container .content-container section.top.flex .top__left .top__left__bottom .horizontal-line {
-    height: 12.5rem;
+    block-size: 12.5rem;
   }
 }
 .bg-container .content-container section.top.flex .top__left .top__left__bottom .vertical-line {
-  width: 3rem;
-  height: 0.2rem;
+  inline-size: 3rem;
+  block-size: 0.2rem;
   background-color: #ffffff;
   z-index: 999;
 }
@@ -290,9 +290,9 @@ ul {
   gap: 7rem;
   flex-direction: column;
   justify-content: center;
-  width: 75%;
-  width: 86.6rem;
-  max-width: 90vw;
+  inline-size: 75%;
+  inline-size: 86.6rem;
+  max-inline-size: 90vw;
   margin: auto;
 }
 .bg-container .content-container section.top.flex .top__right.flex h4 {
@@ -310,16 +310,16 @@ section.bottom {
 }
 section.bottom .large-text-container {
   text-align: center;
-  height: 30rem;
+  block-size: 30rem;
   pointer-events: none;
 }
 section.bottom .large-text-container h3 {
   opacity: 20%;
-  height: 100%;
+  block-size: 100%;
 }
 section.bottom .elem-container {
-  width: 150rem;
-  max-width: 90vw;
+  inline-size: 150rem;
+  max-inline-size: 90vw;
   margin-top: 6rem;
   margin-inline: auto;
   justify-content: center;
@@ -336,9 +336,9 @@ section.bottom .elem-container .elem .elem_img-container {
   overflow: hidden;
 }
 section.bottom .elem-container .elem .elem_img-container img {
-  height: 50rem;
-  width: 100%;
-  min-width: 32rem;
+  block-size: 50rem;
+  inline-size: 100%;
+  min-inline-size: 32rem;
   transition: transform 0.25s ease-in-out;
   overflow: hidden;
 }
@@ -348,12 +348,12 @@ section.bottom .elem-container .elem h4 {
 }
 
 footer {
-  height: 30rem;
+  block-size: 30rem;
   background-color: #011117;
 }
 footer ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  block-size: 100%;
 }/*# sourceMappingURL=style.css.map */

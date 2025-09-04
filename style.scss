@@ -175,7 +175,7 @@ ul {
 ///  PROJECT
 @media (max-width: $media-query__medium) {
     .bg-container {
-        height: 128rem;
+        block-size: 128rem;
     }
 }
 
@@ -194,18 +194,18 @@ ul {
         position: absolute;
         right: -27rem;
         top: 0;
-        width: $mobile-nav-width;
+        inline-size: $mobile-nav-width;
         text-align: right;
         border-left: $border-thickness solid $text-color;
         border-bottom: $border-thickness solid $text-color;
-        transition: width 0.27s ease-in-out;
+        transition: inline-size 0.27s ease-in-out;
         &.flex {
-            width: 0%;
+            inline-size: 0%;
         }
     }
     nav ul.open {
         right: 0;
-        width: $mobile-nav-width;
+        inline-size: $mobile-nav-width;
         padding-top: 13rem;
         li {
             width: 100%;
@@ -242,16 +242,16 @@ ul {
     background-size: cover;
     position: relative;
     .content-container {
-        max-width: 96vw;
-        width: $content-width;
-        height: 110rem;
+        max-inline-size: 96vw;
+        inline-size: $content-width;
+        block-size: 110rem;
         margin-inline: auto;
         display: flex;
         flex-direction: column;
         nav.flex {
             justify-content: flex-start;
             padding: $gap-500 0;
-            max-width: $content-max-width;
+            max-inline-size: $content-max-width;
             margin-inline: auto;
             .logo {
                 gap: $gap-50;
@@ -272,7 +272,7 @@ ul {
                     }
                 }
                 li.journey.flex {
-                    width: unset;
+                    inline-size: unset;
                     gap: 0;
                 }
             }
@@ -281,7 +281,7 @@ ul {
         section.top.flex {
             margin-top: $gap-500;
             margin-bottom: $gap-800;
-            height: 100%;
+            block-size: 100%;
             @media (max-width: $media-query__small) {
                 flex-wrap: wrap;
             }
@@ -289,26 +289,26 @@ ul {
                 display: flex;
                 flex-direction: column;
                 margin: auto;
-                width: $column-width;
-                max-width: $content-max-width;
+                inline-size: $column-width;
+                max-inline-size: $content-max-width;
                 .top__left__top {
                     margin-bottom: $gap-400;
                 }
                 .top__left__bottom {
                     .horizontal-line {
-                        width: 2px;
+                        inline-size: 2px;
                         background-color: $text-color;
                         z-index: 999;
-                        height: 28.5rem;
+                        block-size: 28.5rem;
                     }
                     @media (max-width: $media-query__medium) {
                         .horizontal-line {
-                            height: 12.5rem;
+                            block-size: 12.5rem;
                         }
                     }
                     .vertical-line {
-                        width: 3rem;
-                        height: 0.2rem;
+                        inline-size: 3rem;
+                        block-size: 0.2rem;
                         background-color: $text-color;
                         z-index: 999;
                     }
@@ -323,9 +323,9 @@ ul {
                 gap: $gap-700;
                 flex-direction: column;
                 justify-content: center;
-                width: 75%;
-                width: $column-width;
-                max-width: $content-max-width;
+                inline-size: 75%;
+                inline-size: $column-width;
+                max-inline-size: $content-max-width;
                 margin: auto;
                 h4 {
                     margin-bottom: $gap-100;
@@ -345,16 +345,16 @@ section.bottom {
     margin-bottom: $gap-900;
     .large-text-container {
         text-align: center;
-        height: 30rem;
+        block-size: 30rem;
         pointer-events: none;
         h3 {
             opacity: 20%;
-            height: 100%;
+            block-size: 100%;
         }
     }
     .elem-container {
-        width: $content-width;
-        max-width: $content-max-width;
+        inline-size: $content-width;
+        max-inline-size: $content-max-width;
         margin-top: $gap-600;
         margin-inline: auto;
         justify-content: center;
@@ -371,9 +371,9 @@ section.bottom {
             .elem_img-container {
                 overflow: hidden;
                 img {
-                    height: 50rem;
-                    width: 100%;
-                    min-width: 32rem;
+                    block-size: 50rem;
+                    inline-size: 100%;
+                    min-inline-size: 32rem;
                     transition: transform 0.25s ease-in-out;
                     overflow: hidden;
                 }
@@ -387,12 +387,12 @@ section.bottom {
 }
 
 footer {
-    height: 30rem;
+    block-size: 30rem;
     background-color: $footer-color;
     ul {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100%;
+        block-size: 100%;
     }
 }
